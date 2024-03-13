@@ -1,0 +1,13 @@
+---
+interface Props {
+    id: string
+    name: string
+    img: string
+    success: boolean
+    flightNumber: string
+    details: string
+}
+
+const { success, flightNumber, img, id, details } = Astro.props
+const succesText = success ? "Exito" : "Fracaso"
+---
